@@ -7,5 +7,14 @@ Usage: #definition
 * status = #draft
 * experimental = true
 * description = "FHIR Helpers Library"
-* type = http://terminology.hl7.org/CodeSystem/library-type#logic-library
+* type = $library-type#logic-library
 * content.id = "ig-loader-FHIRHelpers.cql"
+
+Instance: LogicLibrary
+InstanceOf: Library
+Usage: #example
+* name = "LogicLibrary"
+* status = #draft
+* experimental = true
+* type = $library-type#logic-library
+* content.id = "ig-loader-LogicLibrary.cql"
