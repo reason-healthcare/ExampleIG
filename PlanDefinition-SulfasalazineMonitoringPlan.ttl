@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/PlanDefinition/SulfasalazineMonitoringPlan> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SulfasalazineMonitoringPlan"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"SulfasalazineMonitoringPlan\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;SulfasalazineMonitoringPlan&quot; </p></div><p><b>url</b>: <code>http://example.org/PlanDefinition/SulfasalazineMonitoringPlan</code></p><p><b>version</b>: 0.2.0</p><p><b>status</b>: draft</p><p><b>date</b>: 2024-08-06 15:38:10-0400</p><p><b>publisher</b>: Example Publisher</p><p><b>contact</b>: Example Publisher: <a href=\"http://example.org/example-publisher\">http://example.org/example-publisher</a></p><p><b>library</b>: <a href=\"Library-LogicLibrary.html\">LogicLibrary</a></p><blockquote><p><b>action</b></p><p><b>title</b>: Should order CBC if Sulfasalazine is prescribed</p><blockquote><p><b>condition</b></p><p><b>kind</b>: applicability</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql-identifier</td><td>Sulfasalazine Order - from ValueSet</td></tr></table></blockquote><p><b>definition</b>: <a href=\"ActivityDefinition-OrderCBCActivity.html\">ActivityDefinition[http://example.org/ActivityDefinition/OrderCBCActivity|0.2.0]</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: Should order CBC if Sulfasalazine is prescribed from code</p><blockquote><p><b>condition</b></p><p><b>kind</b>: applicability</p><h3>Expressions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style=\"display: none\">*</td><td>text/cql-identifier</td><td>Sulfasalazine Order - from Code</td></tr></table></blockquote><p><b>definition</b>: <a href=\"ActivityDefinition-OrderCBCActivity.html\">ActivityDefinition[http://example.org/ActivityDefinition/OrderCBCActivity|0.2.0]</a></p></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/PlanDefinition/SulfasalazineMonitoringPlan"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-08-06T15:38:10-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Example Publisher"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Example Publisher" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:library ( [
+     fhir:v "http://example.org/Library/LogicLibrary"^^xsd:anyURI ;
+     fhir:link <http://example.org/Library/LogicLibrary>
+  ] ) ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "Should order CBC if Sulfasalazine is prescribed" ] ;
+     fhir:condition ( [
+       fhir:kind [ fhir:v "applicability" ] ;
+       fhir:expression [
+         fhir:language [ fhir:v "text/cql-identifier" ] ;
+         fhir:expression [ fhir:v "Sulfasalazine Order - from ValueSet" ]
+       ]
+     ] ) ;
+     fhir:definition [
+       fhir:v "http://example.org/ActivityDefinition/OrderCBCActivity"^^xsd:anyURI ;
+       fhir:link <http://example.org/ActivityDefinition/OrderCBCActivity>
+     ]
+  ] [
+     fhir:title [ fhir:v "Should order CBC if Sulfasalazine is prescribed from code" ] ;
+     fhir:condition ( [
+       fhir:kind [ fhir:v "applicability" ] ;
+       fhir:expression [
+         fhir:language [ fhir:v "text/cql-identifier" ] ;
+         fhir:expression [ fhir:v "Sulfasalazine Order - from Code" ]
+       ]
+     ] ) ;
+     fhir:definition [
+       fhir:v "http://example.org/ActivityDefinition/OrderCBCActivity"^^xsd:anyURI ;
+       fhir:link <http://example.org/ActivityDefinition/OrderCBCActivity>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

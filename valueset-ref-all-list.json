@@ -1,0 +1,16 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/ValueSet/sulfasalazine-vs",
+      "version" : "0.2.0",
+      "status" : "draft",
+      "name" : "SulfasalazineVS",
+      "title" : null,
+      "description" : null,
+      "systems" : [
+        "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "http://www.whocc.no/atc"
+      ]
+    }
+  ]
+}

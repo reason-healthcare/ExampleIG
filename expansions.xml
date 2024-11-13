@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="73907e56-7101-4bcd-b70f-18a3bfc2f6a5"/>
+  <meta>
+    <lastUpdated value="2024-08-06T15:38:10.341-04:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/sulfasalazine-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>codesystem RxNorm version ??rx1</li>
+                <li>codesystem http://www.whocc.no/atc version 2020-05</li>
+                <li>system RxNorm version ??rx1</li>
+                <li>system http://www.whocc.no/atc version 2020-05</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.whocc.no-atc-A07EC01"> </a>  A07EC01
+                </td>
+                <td>http://www.whocc.no/atc</td>
+                <td>Sulfasalazine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-373988"> </a>  373988
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>Sulfasalazine Enema</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.nlm.nih.gov-research-umls-rxnorm-376645"> </a>  376645
+                </td>
+                <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
+                <td>Sulfasalazine Delayed Release Oral Tablet</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/sulfasalazine-vs"/>
+        <version value="0.2.0"/>
+        <name value="SulfasalazineVS"/>
+        <status value="draft"/>
+        <date value="2024-08-06T15:38:10-04:00"/>
+        <expansion>
+          <identifier value="urn:uuid:dd4942e4-4f70-4d97-9279-37242c14856d"/>
+          <timestamp value="2024-08-06T15:38:27-04:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://www.whocc.no/atc|2020-05"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.whocc.no/atc|2020-05"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://www.nlm.nih.gov/research/umls/rxnorm|??rx1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.nlm.nih.gov/research/umls/rxnorm|??rx1"/>
+          </parameter>
+          <contains>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="A07EC01"/>
+            <display value="Sulfasalazine"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="373988"/>
+            <display value="Sulfasalazine Enema"/>
+          </contains>
+          <contains>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="376645"/>
+            <display value="Sulfasalazine Delayed Release Oral Tablet"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

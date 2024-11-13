@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <annotation translatorOptions="EnableAnnotations,EnableLocators" xsi:type="a:CqlToElmInfo"/>
+   <annotation xsi:type="a:Annotation">
+      <a:s r="26">
+         <a:s>library LogicLibrary version '0.1.0'</a:s>
+      </a:s>
+   </annotation>
+   <identifier id="LogicLibrary" system="http://example.org" version="0.1.0"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def localId="1" locator="3:1-3:26" localIdentifier="FHIR" uri="http://hl7.org/fhir" version="4.0.1">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="1">
+               <a:s>using </a:s>
+               <a:s>
+                  <a:s>FHIR</a:s>
+               </a:s>
+               <a:s> version '4.0.1'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </usings>
+   <includes>
+      <def localId="2" locator="5:1-5:35" localIdentifier="FHIRHelpers" path="http://example.org/FHIRHelpers" version="0.1.0">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="2">
+               <a:s>include </a:s>
+               <a:s>
+                  <a:s>FHIRHelpers</a:s>
+               </a:s>
+               <a:s> version '0.1.0'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </includes>
+   <codeSystems>
+      <def localId="4" locator="9:1-9:43" name="ATC" id="http://www.whocc.no/atc" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="4">
+               <a:s>codesystem &quot;ATC&quot;: 'http://www.whocc.no/atc'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </codeSystems>
+   <valueSets>
+      <def localId="3" locator="7:1-7:84" name="Sulfasalazine Medications" id="http://example.org/ValueSet/sulfasalazine-vs" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="3">
+               <a:s>valueset &quot;Sulfasalazine Medications&quot;: 'http://example.org/ValueSet/sulfasalazine-vs'</a:s>
+            </a:s>
+         </annotation>
+      </def>
+   </valueSets>
+   <codes>
+      <def localId="6" locator="10:1-10:53" name="Sulfasalazine Medication" id="A07EC01" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="6">
+               <a:s>code &quot;Sulfasalazine Medication&quot;: 'A07EC01' from </a:s>
+               <a:s r="5">
+                  <a:s>&quot;ATC&quot;</a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <codeSystem localId="5" locator="10:49-10:53" name="ATC"/>
+      </def>
+   </codes>
+   <contexts>
+      <def locator="12:1-12:15" name="Patient"/>
+   </contexts>
+   <statements>
+      <def locator="12:1-12:15" name="Patient" context="Patient">
+         <expression xsi:type="SingletonFrom">
+            <operand locator="12:1-12:15" dataType="fhir:Patient" templateId="http://hl7.org/fhir/StructureDefinition/Patient" xsi:type="Retrieve"/>
+         </expression>
+      </def>
+      <def localId="16" locator="14:1-16:57" name="Sulfasalazine Order - from ValueSet" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="16">
+               <a:s>define &quot;Sulfasalazine Order - from ValueSet&quot;:
+  </a:s>
+               <a:s r="15">
+                  <a:s>exists</a:s>
+                  <a:s r="14">
+                     <a:s>(</a:s>
+                     <a:s r="14">
+                        <a:s>
+                           <a:s r="8">
+                              <a:s r="7">
+                                 <a:s r="7">
+                                    <a:s>[MedicationRequest: </a:s>
+                                    <a:s>
+                                       <a:s>&quot;Sulfasalazine Medications&quot;</a:s>
+                                    </a:s>
+                                    <a:s>]</a:s>
+                                 </a:s>
+                              </a:s>
+                              <a:s> SulfasalazineMedication</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>
+    </a:s>
+                        <a:s r="13">
+                           <a:s>where </a:s>
+                           <a:s r="13">
+                              <a:s r="10">
+                                 <a:s r="9">
+                                    <a:s>SulfasalazineMedication</a:s>
+                                 </a:s>
+                                 <a:s>.</a:s>
+                                 <a:s r="10">
+                                    <a:s>status</a:s>
+                                 </a:s>
+                              </a:s>
+                              <a:s> in </a:s>
+                              <a:s r="12">
+                                 <a:s>{ </a:s>
+                                 <a:s r="11">
+                                    <a:s>'active'</a:s>
+                                 </a:s>
+                                 <a:s> }</a:s>
+                              </a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>)</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="15" locator="15:3-16:57" xsi:type="Exists">
+            <operand localId="14" locator="15:9-16:57" xsi:type="Query">
+               <source localId="8" locator="15:10-15:81" alias="SulfasalazineMedication">
+                  <expression localId="7" locator="15:10-15:57" xsi:type="Union">
+                     <operand dataType="fhir:MedicationRequest" templateId="http://hl7.org/fhir/StructureDefinition/MedicationRequest" codeProperty="medication" codeComparator="in" xsi:type="Retrieve">
+                        <codes locator="15:30-15:56" name="Sulfasalazine Medications" preserve="true" xsi:type="ValueSetRef"/>
+                     </operand>
+                     <operand locator="15:10-15:57" dataType="fhir:MedicationRequest" templateId="http://hl7.org/fhir/StructureDefinition/MedicationRequest" codeProperty="medication" codeComparator="in" xsi:type="Retrieve">
+                        <codes locator="15:30-15:56" name="Sulfasalazine Medications" preserve="true" xsi:type="ValueSetRef"/>
+                     </operand>
+                  </expression>
+               </source>
+               <where localId="13" locator="16:5-16:56" xsi:type="In">
+                  <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand localId="10" locator="16:11-16:40" path="status" scope="SulfasalazineMedication" xsi:type="Property"/>
+                  </operand>
+                  <operand localId="12" locator="16:45-16:56" xsi:type="List">
+                     <element localId="11" locator="16:47-16:54" valueType="t:String" value="active" xsi:type="Literal"/>
+                  </operand>
+               </where>
+            </operand>
+         </expression>
+      </def>
+      <def localId="26" locator="18:1-20:57" name="Sulfasalazine Order - from Code" context="Patient" accessLevel="Public">
+         <annotation xsi:type="a:Annotation">
+            <a:s r="26">
+               <a:s>define &quot;Sulfasalazine Order - from Code&quot;:
+  </a:s>
+               <a:s r="25">
+                  <a:s>exists</a:s>
+                  <a:s r="24">
+                     <a:s>(</a:s>
+                     <a:s r="24">
+                        <a:s>
+                           <a:s r="18">
+                              <a:s r="17">
+                                 <a:s r="17">
+                                    <a:s>[MedicationRequest: </a:s>
+                                    <a:s>
+                                       <a:s>&quot;Sulfasalazine Medication&quot;</a:s>
+                                    </a:s>
+                                    <a:s>]</a:s>
+                                 </a:s>
+                              </a:s>
+                              <a:s> SulfasalazineMedication</a:s>
+                           </a:s>
+                        </a:s>
+                        <a:s>
+    </a:s>
+                        <a:s r="23">
+                           <a:s>where </a:s>
+                           <a:s r="23">
+                              <a:s r="20">
+                                 <a:s r="19">
+                                    <a:s>SulfasalazineMedication</a:s>
+                                 </a:s>
+                                 <a:s>.</a:s>
+                                 <a:s r="20">
+                                    <a:s>status</a:s>
+                                 </a:s>
+                              </a:s>
+                              <a:s> in </a:s>
+                              <a:s r="22">
+                                 <a:s>{ </a:s>
+                                 <a:s r="21">
+                                    <a:s>'active'</a:s>
+                                 </a:s>
+                                 <a:s> }</a:s>
+                              </a:s>
+                           </a:s>
+                        </a:s>
+                     </a:s>
+                     <a:s>)</a:s>
+                  </a:s>
+               </a:s>
+            </a:s>
+         </annotation>
+         <expression localId="25" locator="19:3-20:57" xsi:type="Exists">
+            <operand localId="24" locator="19:9-20:57" xsi:type="Query">
+               <source localId="18" locator="19:10-19:80" alias="SulfasalazineMedication">
+                  <expression localId="17" locator="19:10-19:56" xsi:type="Union">
+                     <operand dataType="fhir:MedicationRequest" templateId="http://hl7.org/fhir/StructureDefinition/MedicationRequest" codeProperty="medication" codeComparator="~" xsi:type="Retrieve">
+                        <codes xsi:type="ToList">
+                           <operand locator="19:30-19:55" name="Sulfasalazine Medication" xsi:type="CodeRef"/>
+                        </codes>
+                     </operand>
+                     <operand locator="19:10-19:56" dataType="fhir:MedicationRequest" templateId="http://hl7.org/fhir/StructureDefinition/MedicationRequest" codeProperty="medication" codeComparator="~" xsi:type="Retrieve">
+                        <codes xsi:type="ToList">
+                           <operand locator="19:30-19:55" name="Sulfasalazine Medication" xsi:type="CodeRef"/>
+                        </codes>
+                     </operand>
+                  </expression>
+               </source>
+               <where localId="23" locator="20:5-20:56" xsi:type="In">
+                  <operand name="ToString" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                     <operand localId="20" locator="20:11-20:40" path="status" scope="SulfasalazineMedication" xsi:type="Property"/>
+                  </operand>
+                  <operand localId="22" locator="20:45-20:56" xsi:type="List">
+                     <element localId="21" locator="20:47-20:54" valueType="t:String" value="active" xsi:type="Literal"/>
+                  </operand>
+               </where>
+            </operand>
+         </expression>
+      </def>
+   </statements>
+</library>
