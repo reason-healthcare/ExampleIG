@@ -3,13 +3,13 @@
 <ActivityDefinition xmlns="http://hl7.org/fhir">
   <id value="OrderCBCActivity"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition OrderCBCActivity</b></p><a name="OrderCBCActivity"> </a><a name="hcOrderCBCActivity"> </a><a name="OrderCBCActivity-en-US"> </a><p><b>url</b>: <a href="ActivityDefinition-OrderCBCActivity.html">ActivityDefinition: url = http://example.org/ActivityDefinition/OrderCBCActivity; version = 0.1.0; status = draft; date = 2024-11-14 18:50:55+0000; publisher = Example Publisher; contact = Example Publisher (http://example.org/example-publisher); description = Order CBC; jurisdiction = ; copyright = ; kind = ServiceRequest; doNotPerform = false; product[x] = CBC panel - Blood by Automated count</a></p><p><b>version</b>: 0.1.0</p><p><b>status</b>: Draft</p><p><b>date</b>: 2024-11-14 18:50:55+0000</p><p><b>publisher</b>: Example Publisher</p><p><b>contact</b>: Example Publisher: <a href="http://example.org/example-publisher">http://example.org/example-publisher</a></p><p><b>description</b>: </p><div><p>Order CBC</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition OrderCBCActivity</b></p><a name="OrderCBCActivity"> </a><a name="hcOrderCBCActivity"> </a><a name="OrderCBCActivity-en-US"> </a><p><b>url</b>: <a href="ActivityDefinition-OrderCBCActivity.html">ActivityDefinition: url = http://example.org/ActivityDefinition/OrderCBCActivity; version = 0.1.0; status = draft; date = 2024-11-14 19:02:01+0000; publisher = Example Publisher; contact = Example Publisher (http://example.org/example-publisher); description = Order CBC; jurisdiction = ; copyright = ; kind = ServiceRequest; doNotPerform = false; product[x] = CBC panel - Blood by Automated count</a></p><p><b>version</b>: 0.1.0</p><p><b>status</b>: Draft</p><p><b>date</b>: 2024-11-14 19:02:01+0000</p><p><b>publisher</b>: Example Publisher</p><p><b>contact</b>: Example Publisher: <a href="http://example.org/example-publisher">http://example.org/example-publisher</a></p><p><b>description</b>: </p><div><p>Order CBC</p>
 </div><p><b>kind</b>: ServiceRequest</p><p><b>doNotPerform</b>: false</p><p><b>product</b>: <span title="Codes:{http://loinc.org 58410-2}">CBC panel - Blood by Automated count</span></p></div>
   </text>
   <url value="http://example.org/ActivityDefinition/OrderCBCActivity"/>
   <version value="0.1.0"/>
   <status value="draft"/>
-  <date value="2024-11-14T18:50:55+00:00"/>
+  <date value="2024-11-14T19:02:01+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>

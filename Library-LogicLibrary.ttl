@@ -23,7 +23,7 @@
        fhir:code [ fhir:v "logic-library" ]
      ] )
   ] ; # 
-  fhir:date [ fhir:v "2024-11-14T18:50:55+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-14T19:02:01+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;

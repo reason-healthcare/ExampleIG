@@ -3,7 +3,7 @@ ExampleIG : Validation Results
 
 err = 2, warn = 18, info = 2
 IG Publisher Version: 1.7.2
-Generated Thu Nov 14 18:51:21 UTC 2024. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
+Generated Thu Nov 14 19:02:23 UTC 2024. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
  Build Errors : 57 / 10 / 0
  /github/workspace/fsh-generated/resources/ActivityDefinition-OrderCBCActivity : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-PatientBundle1 : 0 / 1 / 3
