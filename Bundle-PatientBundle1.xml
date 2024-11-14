@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="PatientBundle1"/>
+  <meta>
+    <tag>
+      <code value="test"/>
+    </tag>
+  </meta>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="http://example.org/Patient/Patient1"/>
+    <resource>
+      <Patient>
+        <id value="Patient1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_Patient1"> </a><p class="res-header-id"><b>Generated Narrative: Patient Patient1</b></p><a name="Patient1"> </a><a name="hcPatient1"> </a><a name="Patient1-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">patient1  (no stated gender), DoB Unknown</p><hr/></div>
+        </text>
+        <name>
+          <family value="patient1"/>
+        </name>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Patient/Patient1"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/MedicationRequest/MedicationRequest1"/>
+    <resource>
+      <MedicationRequest>
+        <id value="MedicationRequest1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MedicationRequest_MedicationRequest1"> </a><p class="res-header-id"><b>Generated Narrative: MedicationRequest MedicationRequest1</b></p><a name="MedicationRequest1"> </a><a name="hcMedicationRequest1"> </a><a name="MedicationRequest1-en-US"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <span title="Codes:{http://www.whocc.no/atc A07EC01}">Sulfasalazine</span></p><p><b>subject</b>: <a href="Patient-Patient1.html">patient1  (no stated gender), DoB Unknown</a></p></div>
+        </text>
+        <status value="active"/>
+        <intent value="order"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="A07EC01"/>
+            <display value="Sulfasalazine"/>
+          </coding>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/Patient1"/>
+        </subject>
+      </MedicationRequest>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="MedicationRequest/MedicationRequest1"/>
+    </request>
+  </entry>
+</Bundle>

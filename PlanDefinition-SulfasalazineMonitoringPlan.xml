@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="SulfasalazineMonitoringPlan"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition SulfasalazineMonitoringPlan</b></p><a name="SulfasalazineMonitoringPlan"> </a><a name="hcSulfasalazineMonitoringPlan"> </a><a name="SulfasalazineMonitoringPlan-en-US"> </a><p><b>url</b>: <a href="PlanDefinition-SulfasalazineMonitoringPlan.html">PlanDefinition: url = http://example.org/PlanDefinition/SulfasalazineMonitoringPlan; version = 0.1.0; status = draft; date = 2024-11-14 18:43:34+0000; publisher = Example Publisher; contact = Example Publisher (http://example.org/example-publisher); jurisdiction = ; copyright = ; library = http://example.org/Library/LogicLibrary</a></p><p><b>version</b>: 0.1.0</p><p><b>status</b>: Draft</p><p><b>date</b>: 2024-11-14 18:43:34+0000</p><p><b>publisher</b>: Example Publisher</p><p><b>contact</b>: Example Publisher: <a href="http://example.org/example-publisher">http://example.org/example-publisher</a></p><p><b>library</b>: <a href="Library-LogicLibrary.html">LogicLibrary</a></p><blockquote><p><b>action</b></p><p><b>title</b>: Should order CBC if Sulfasalazine is prescribed</p><blockquote><p><b>condition</b></p><p><b>kind</b>: Applicability</p><h3>Expressions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Language</b></td><td><b>Expression</b></td></tr><tr><td style="display: none">*</td><td>text/cql-identifier</td><td>Sulfasalazine Order</td></tr></table></blockquote><p><b>definition</b>: <a href="ActivityDefinition-OrderCBCActivity.html">ActivityDefinition[http://example.org/ActivityDefinition/OrderCBCActivity|0.1.0]</a></p></blockquote></div>
+  </text>
+  <url value="http://example.org/PlanDefinition/SulfasalazineMonitoringPlan"/>
+  <version value="0.1.0"/>
+  <status value="draft"/>
+  <date value="2024-11-14T18:43:34+00:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <library value="http://example.org/Library/LogicLibrary"/>
+  <action>
+    <title value="Should order CBC if Sulfasalazine is prescribed"/>
+    <condition>
+      <kind value="applicability"/>
+      <expression>
+        <language value="text/cql-identifier"/>
+        <expression value="Sulfasalazine Order"/>
+      </expression>
+    </condition>
+    <definitionCanonical value="http://example.org/ActivityDefinition/OrderCBCActivity"/>
+  </action>
+</PlanDefinition>

@@ -1,0 +1,55 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "PatientBundle1",
+  "meta" : {
+    "tag" : [{
+      "code" : "test"
+    }]
+  },
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "http://example.org/Patient/Patient1",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "Patient1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_Patient1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient Patient1</b></p><a name=\"Patient1\"> </a><a name=\"hcPatient1\"> </a><a name=\"Patient1-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">patient1  (no stated gender), DoB Unknown</p><hr/></div>"
+      },
+      "name" : [{
+        "family" : "patient1"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/Patient1"
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/MedicationRequest/MedicationRequest1",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "MedicationRequest1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_MedicationRequest1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest MedicationRequest1</b></p><a name=\"MedicationRequest1\"> </a><a name=\"hcMedicationRequest1\"> </a><a name=\"MedicationRequest1-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc A07EC01}\">Sulfasalazine</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">patient1  (no stated gender), DoB Unknown</a></p></div>"
+      },
+      "status" : "active",
+      "intent" : "order",
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "A07EC01",
+          "display" : "Sulfasalazine"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/Patient1"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationRequest/MedicationRequest1"
+    }
+  }]
+}

@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Bundle/PatientBundle1> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PatientBundle1"] ; # 
+  fhir:meta [
+     fhir:tag ( [
+       fhir:code [ fhir:v "test" ]
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://example.org/Patient/Patient1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/Patient/Patient1> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Patient/Patient1"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://example.org/MedicationRequest/MedicationRequest1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://example.org/MedicationRequest/MedicationRequest1> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "MedicationRequest/MedicationRequest1"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<http://example.org/Patient/Patient1> a fhir:Patient ;
+  fhir:id [ fhir:v "Patient1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_Patient1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient Patient1</b></p><a name=\"Patient1\"> </a><a name=\"hcPatient1\"> </a><a name=\"Patient1-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">patient1  (no stated gender), DoB Unknown</p><hr/></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "patient1" ]
+  ] ) . # 
+
+<http://example.org/MedicationRequest/MedicationRequest1> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "MedicationRequest1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_MedicationRequest1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest MedicationRequest1</b></p><a name=\"MedicationRequest1\"> </a><a name=\"hcMedicationRequest1\"> </a><a name=\"MedicationRequest1-en-US\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <span title=\"Codes:{http://www.whocc.no/atc A07EC01}\">Sulfasalazine</span></p><p><b>subject</b>: <a href=\"Patient-Patient1.html\">patient1  (no stated gender), DoB Unknown</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "A07EC01" ] ;
+       fhir:display [ fhir:v "Sulfasalazine" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/Patient1> ;
+     fhir:reference [ fhir:v "Patient/Patient1" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,108 @@
+ExampleIG : Validation Results
+=========================================
+
+err = 2, warn = 18, info = 2
+IG Publisher Version: 1.7.2
+Generated Thu Nov 14 18:43:57 UTC 2024. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
+ Build Errors : 57 / 10 / 0
+ /github/workspace/fsh-generated/resources/ActivityDefinition-OrderCBCActivity : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Bundle-PatientBundle1 : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.example : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Library-FHIRHelpers : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Library-LogicLibrary : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/MedicationRequest-MedicationRequest1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Parameters-SulfasalazineMonirotingParameters : 0 / 3 / 4
+ /github/workspace/fsh-generated/resources/Patient-Patient1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/PlanDefinition-SulfasalazineMonitoringPlan : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-sulfasalazine-vs : 0 / 3 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/sulfasalazine-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Library/LogicLibrary.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/MedicationRequest1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Patient1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/PatientBundle1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/SulfasalazineMonirotingParameters.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/ActivityDefinition-OrderCBCActivity-testing.html#/html/body/div/div/div/p/a at Line 215, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-OrderCBCActivity.change.history.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-OrderCBCActivity.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 892: The link 'http://example.org/example-publisher' for "http://example.org/example-publisher" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-OrderCBCActivity.html#/html/body/div/div/div/p/a at Line 241, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-OrderCBCActivity.json.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-OrderCBCActivity.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-OrderCBCActivity.xml.html#/html/body/div/div/div/p/a at Line 238, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Bundle-PatientBundle1.change.history.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Bundle-PatientBundle1.html#/html/body/div/div/div/p/a at Line 195, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Bundle-PatientBundle1.json.html#/html/body/div/div/div/p/a at Line 255, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Bundle-PatientBundle1.ttl.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Bundle-PatientBundle1.xml.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Library-FHIRHelpers-testing.html#/html/body/div/div/div/p/a at Line 215, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Library-FHIRHelpers.change.history.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Library-FHIRHelpers.html#/html/body/div/div/div/p/a at Line 646, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Library-FHIRHelpers.json.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Library-FHIRHelpers.ttl.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Library-FHIRHelpers.xml.html#/html/body/div/div/div/p/a at Line 657, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Library-LogicLibrary-testing.html#/html/body/div/div/div/p/a at Line 215, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Library-LogicLibrary.change.history.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Library-LogicLibrary.html#/html/body/div/div/div/p/a at Line 247, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Library-LogicLibrary.json.html#/html/body/div/div/div/p/a at Line 309, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Library-LogicLibrary.ttl.html#/html/body/div/div/div/p/a at Line 300, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Library-LogicLibrary.xml.html#/html/body/div/div/div/p/a at Line 304, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-MedicationRequest1.change.history.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-MedicationRequest1.html#/html/body/div/div/div/p/a at Line 193, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-MedicationRequest1.json.html#/html/body/div/div/div/p/a at Line 214, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-MedicationRequest1.ttl.html#/html/body/div/div/div/p/a at Line 222, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/MedicationRequest-MedicationRequest1.xml.html#/html/body/div/div/div/p/a at Line 212, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Parameters-SulfasalazineMonirotingParameters.change.history.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Parameters-SulfasalazineMonirotingParameters.html#/html/body/div/div/div/div/div/div/table/tr/td/blockquote/p/a at Line 168, column 1027: The link 'http://example.org/Patient/Patient1' for "http://example.org/Patient/Patient1" cannot be resolved
+ERROR: /github/workspace/output/Parameters-SulfasalazineMonirotingParameters.html#/html/body/div/div/div/div/div/div/table/tr/td/blockquote/p/a at Line 168, column 1492: The link 'http://example.org/MedicationRequest/MedicationRequest1' for "http://example.org/MedicationRequest/MedicationRequest1" cannot be resolved
+ERROR: /github/workspace/output/Parameters-SulfasalazineMonirotingParameters.html#/html/body/div/div/div/p/a at Line 193, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Parameters-SulfasalazineMonirotingParameters.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Parameters-SulfasalazineMonirotingParameters.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Parameters-SulfasalazineMonirotingParameters.xml.html#/html/body/div/div/div/p/a at Line 255, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Patient-Patient1.change.history.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Patient-Patient1.html#/html/body/div/div/div/p/a at Line 193, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Patient-Patient1.json.html#/html/body/div/div/div/p/a at Line 205, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Patient-Patient1.ttl.html#/html/body/div/div/div/p/a at Line 213, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/Patient-Patient1.xml.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-SulfasalazineMonitoringPlan-testing.html#/html/body/div/div/div/p/a at Line 215, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-SulfasalazineMonitoringPlan.change.history.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-SulfasalazineMonitoringPlan.html#/html/body/div/div/div/div/div/div/p/a at Line 210, column 872: The link 'http://example.org/example-publisher' for "http://example.org/example-publisher" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-SulfasalazineMonitoringPlan.html#/html/body/div/div/div/p/a at Line 235, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-SulfasalazineMonitoringPlan.json.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-SulfasalazineMonitoringPlan.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-SulfasalazineMonitoringPlan.xml.html#/html/body/div/div/div/p/a at Line 240, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-sulfasalazine-vs-testing.html#/html/body/div/div/div/p/a at Line 215, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-sulfasalazine-vs.change.history.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-sulfasalazine-vs.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-sulfasalazine-vs.json.html#/html/body/div/div/div/p/a at Line 258, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-sulfasalazine-vs.ttl.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-sulfasalazine-vs.xml.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 140, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ActivityDefinition-OrderCBCActivity.json ==
+ERROR: ActivityDefinition.text.div: Hyperlink 'http://example.org/example-publisher' at 'div/p/a' for 'http://example.org/example-publisher' does not resolve
+== fsh-generated/resources/Bundle-PatientBundle1.json ==
+WARNING: Bundle/PatientBundle1: Bundle.meta.tag[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/ImplementationGuide-fhir.example.json ==
+== fsh-generated/resources/Library-FHIRHelpers.json ==
+== fsh-generated/resources/Library-LogicLibrary.json ==
+WARNING: /github/workspace/./input/cql/LogicLibrary.cql: The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/MedicationRequest-MedicationRequest1.json ==
+== fsh-generated/resources/Parameters-SulfasalazineMonirotingParameters.json ==
+WARNING: Parameters/SulfasalazineMonirotingParameters: Parameters.parameter[1].resource/*Bundle/PatientBundle1*/.meta.tag[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Parameters/SulfasalazineMonirotingParameters: Parameters.parameter[1].resource/*Bundle/PatientBundle1*/.entry[0].resource/*Patient/Patient1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/SulfasalazineMonirotingParameters: Parameters.parameter[1].resource/*Bundle/PatientBundle1*/.entry[1].resource/*MedicationRequest/MedicationRequest1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+== fsh-generated/resources/Patient-Patient1.json ==
+== fsh-generated/resources/PlanDefinition-SulfasalazineMonitoringPlan.json ==
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+ERROR: PlanDefinition.text.div: Hyperlink 'http://example.org/example-publisher' at 'div/p/a' for 'http://example.org/example-publisher' does not resolve
+== fsh-generated/resources/ValueSet-sulfasalazine-vs.json ==
+WARNING: ValueSet/sulfasalazine-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
+WARNING: ValueSet/sulfasalazine-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/sulfasalazine-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present

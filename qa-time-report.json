@@ -1,0 +1,391 @@
+{
+  "date" : "Thu, 14 Nov, 2024 18:43:34 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-fhir.example.json",
+      "size" : 2783,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 23
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 30,
+          "length" : 11
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 30,
+          "length" : 185
+        },
+        {
+          "activity" : "validate",
+          "start" : 31,
+          "length" : 860
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 33,
+          "length" : 95
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 85
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 49,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 49,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 53,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-OrderCBCActivity.json",
+      "size" : 438,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 16
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 50
+        },
+        {
+          "activity" : "validate",
+          "start" : 31,
+          "length" : 95
+        },
+        {
+          "activity" : "generate1",
+          "start" : 34,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-PatientBundle1.json",
+      "size" : 1174,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 74
+        },
+        {
+          "activity" : "generate1",
+          "start" : 34,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Library-FHIRHelpers.json",
+      "size" : 470,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 13
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 150
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 35
+        },
+        {
+          "activity" : "validate",
+          "start" : 32,
+          "length" : 649
+        },
+        {
+          "activity" : "generate1",
+          "start" : 34,
+          "length" : 3927
+        },
+        {
+          "activity" : "generate2",
+          "start" : 39,
+          "length" : 478
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 49,
+          "length" : 71
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Library-LogicLibrary.json",
+      "size" : 359,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 9
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 30,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 24
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 30,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 68
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 38,
+          "length" : 98
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 18
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 50,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MedicationRequest-MedicationRequest1.json",
+      "size" : 354,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 12
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 38,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Parameters-SulfasalazineMonirotingParameters.json",
+      "size" : 1771,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 38,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-Patient1.json",
+      "size" : 108,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 38,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-SulfasalazineMonitoringPlan.json",
+      "size" : 640,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 30
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 224
+        },
+        {
+          "activity" : "generate1",
+          "start" : 38,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-sulfasalazine-vs.json",
+      "size" : 731,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 31,
+          "length" : 258
+        },
+        {
+          "activity" : "validate",
+          "start" : 31,
+          "length" : 516
+        },
+        {
+          "activity" : "generate1",
+          "start" : 38,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 40,
+          "length" : 5408
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 50,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

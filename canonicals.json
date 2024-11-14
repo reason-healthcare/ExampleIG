@@ -1,0 +1,42 @@
+[
+  {
+    "id" : "OrderCBCActivity",
+    "type" : "ActivityDefinition",
+    "url" : "http://example.org/ActivityDefinition/OrderCBCActivity",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "fhir.example",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.org/ImplementationGuide/fhir.example",
+    "version" : "0.1.0",
+    "name" : "ExampleIG"
+  },
+  {
+    "id" : "FHIRHelpers",
+    "type" : "Library",
+    "url" : "http://example.org/Library/FHIRHelpers",
+    "version" : "0.1.0",
+    "name" : "FHIRHelpers"
+  },
+  {
+    "id" : "LogicLibrary",
+    "type" : "Library",
+    "url" : "http://example.org/Library/LogicLibrary",
+    "version" : "0.1.0",
+    "name" : "LogicLibrary"
+  },
+  {
+    "id" : "SulfasalazineMonitoringPlan",
+    "type" : "PlanDefinition",
+    "url" : "http://example.org/PlanDefinition/SulfasalazineMonitoringPlan",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "sulfasalazine-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/sulfasalazine-vs",
+    "version" : "0.1.0",
+    "name" : "SulfasalazineVS"
+  }
+]
