@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "a268e816-517f-4740-98ad-e9e9d700f01b",
+  "id" : "fc22e927-8e28-469f-9e25-974c87eb0dd7",
   "meta" : {
-    "lastUpdated" : "2024-11-14T18:43:34.007+00:00"
+    "lastUpdated" : "2024-11-14T18:50:55.530+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -17,10 +17,10 @@
       "version" : "0.1.0",
       "name" : "SulfasalazineVS",
       "status" : "draft",
-      "date" : "2024-11-14T18:43:34+00:00",
+      "date" : "2024-11-14T18:50:55+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:a6ac1326-f972-4103-982d-9790f8b2e69d",
-        "timestamp" : "2024-11-14T18:43:48+00:00",
+        "identifier" : "urn:uuid:ec223243-4fc7-4a0e-815f-216c2fc9b5e3",
+        "timestamp" : "2024-11-14T18:51:12+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{

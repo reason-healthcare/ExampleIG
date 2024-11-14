@@ -1,11 +1,11 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-fhir.example.json	2783	-	0	0	0	0	0	0	11	185	0	0	0	0	0	0	0	1	0	0	95	85	0	0	1	3	0	2
-fsh-generated/resources/ActivityDefinition-OrderCBCActivity.json	438	10	0	0	0	0	0	0	0	50	0	0	0	0	0	0	0	0	0	0	17	15	0	0	0	0	0	0
-fsh-generated/resources/Bundle-PatientBundle1.json	1174	10	0	0	0	0	18	0	0	7	0	0	0	0	0	0	0	0	0	0	16	16	0	0	0	0	0	0
-fsh-generated/resources/Library-FHIRHelpers.json	470	13	0	0	0	0	0	0	0	35	0	0	0	0	0	0	0	0	0	0	3927	478	0	0	0	71	0	0
-fsh-generated/resources/Library-LogicLibrary.json	359	9	1	0	0	0	0	0	1	8	0	0	0	0	0	0	0	1	0	0	98	18	0	0	0	2	0	0
-fsh-generated/resources/MedicationRequest-MedicationRequest1.json	354	12	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	9	10	0	0	0	0	0	0
-fsh-generated/resources/Parameters-SulfasalazineMonirotingParameters.json	1771	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	16	0	0	0	0	0	0
-fsh-generated/resources/Patient-Patient1.json	108	9	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	7	7	0	0	0	0	0	0
-fsh-generated/resources/PlanDefinition-SulfasalazineMonitoringPlan.json	640	8	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	16	10	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-sulfasalazine-vs.json	731	9	0	0	0	0	0	0	0	258	0	0	0	0	0	0	0	0	0	0	14	5408	0	0	0	1	0	0
+/fsh-generated/resources/ImplementationGuide-fhir.example.json	2783	-	0	0	0	0	0	0	5	378	0	0	0	0	0	0	0	1	0	0	90	74	0	0	1	3	0	1
+fsh-generated/resources/ActivityDefinition-OrderCBCActivity.json	438	14	0	0	0	0	0	0	0	37	1	0	0	0	0	0	0	0	0	0	20	15	0	0	0	0	0	1
+fsh-generated/resources/Bundle-PatientBundle1.json	1174	10	0	0	0	0	18	0	0	4	0	0	0	0	0	0	0	0	0	0	15	17	0	0	0	0	0	0
+fsh-generated/resources/Library-FHIRHelpers.json	470	13	0	0	0	0	0	0	0	53	0	0	0	0	0	0	0	0	0	0	3946	344	0	0	0	71	0	0
+fsh-generated/resources/Library-LogicLibrary.json	359	8	0	0	0	0	0	0	1	5	0	0	0	0	0	0	0	0	0	0	98	18	0	0	0	2	0	0
+fsh-generated/resources/MedicationRequest-MedicationRequest1.json	354	9	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	1	8	8	0	0	0	0	0	0
+fsh-generated/resources/Parameters-SulfasalazineMonirotingParameters.json	1771	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	20	0	0	0	0	0	0
+fsh-generated/resources/Patient-Patient1.json	108	9	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	7	0	0	0	0	0	0
+fsh-generated/resources/PlanDefinition-SulfasalazineMonitoringPlan.json	640	8	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	15	7	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-sulfasalazine-vs.json	731	9	0	0	0	0	0	0	0	544	0	0	0	0	0	0	0	0	0	0	15	5530	0	0	0	1	0	0

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a268e816-517f-4740-98ad-e9e9d700f01b"/>
+  <id value="fc22e927-8e28-469f-9e25-974c87eb0dd7"/>
   <meta>
-    <lastUpdated value="2024-11-14T18:43:34.007+00:00"/>
+    <lastUpdated value="2024-11-14T18:50:55.530+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -64,10 +64,10 @@
         <version value="0.1.0"/>
         <name value="SulfasalazineVS"/>
         <status value="draft"/>
-        <date value="2024-11-14T18:43:34+00:00"/>
+        <date value="2024-11-14T18:50:55+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a6ac1326-f972-4103-982d-9790f8b2e69d"/>
-          <timestamp value="2024-11-14T18:43:48+00:00"/>
+          <identifier value="urn:uuid:ec223243-4fc7-4a0e-815f-216c2fc9b5e3"/>
+          <timestamp value="2024-11-14T18:51:12+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
